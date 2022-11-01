@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: black">
+<body  style="background-color: black;">
     
    <form  style="border-style:solid; border-color: white; width: 300px ; ">
-    <legend style="padding-bottom: 10px;">Contato</legend>
+    <legend style="padding-bottom: 10px; color: white ;">Contato</legend>
 
-    <label style="color: white;" >Nome</label>
-    
+    <label style="margin-bottom: 10px; color: white;" >Nome</label>
+    <br>
     <input type="text" name="nome" id="Name">
 
- <label style="color: white;" >e-mail</label>
-   
-    <input type="text" name="e-mail" id="mail">
+     <!--//////////////////////////////-->
 
-    <label >Nome</label>
+     <div style="margin-top: 10px; margin-bottom: 10px;">
+        <label style="color: white;" >
+            e-mail
+        </label>
+           <br>
+            <input type="email" placeholder="digite seu e-mail" name="e-mail" id="mail">
+        
+           
+     </div>
+
+    <label style="color: white;">Mensagem</label>
     
-    <input type="text" name="nome" id="Name">
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
+    <button style="margin-top: 50px;"> ENVIAR </button>
     </form>
 </body>
 </html>
