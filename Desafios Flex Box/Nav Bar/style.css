@@ -1,0 +1,21 @@
+header{
+    padding: 4rem;
+    background-color: gray;
+}
+
+nav {
+   
+    display:  flex; 
+    justify-content: space-between ;
+    align-items: flex-end;
+    
+  
+}
+div{
+   
+    margin-right: 150vh;
+}
+
+*{
+    margin: 0;
+}
