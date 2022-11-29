@@ -14,7 +14,7 @@ ask()
 const answers = [];
 process.stdin.on("data", data=>{ //o on executa a função data
    answers.push(data.toString().trim())//o sdn out recebe o data e tira os espaços com o trim
-    if(answers.length < pergunta.length){
+    if(answers.length < pergunta.length){ //Se tiver mais perguntas que respostas ele vai pro proximo
         ask(answers.length)
     } else{
         console.log(answers)
