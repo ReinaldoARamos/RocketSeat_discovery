@@ -10,3 +10,8 @@ const ask = (index = 0) => {
 }
 
 ask()
+
+process.stdin.on("data", data=>{ //o on executa a função data
+    process.stdout.write(data.toString().trim())//o sdn out recebe o data e tira os espaços com o trim
+    process.exit()//termina o processo assim que ele chegar ao fim, evitando loops
+})
