@@ -6,12 +6,20 @@ const  pergunta = [
 ]
 
 const ask = (index = 0) => {
-    process.stdout.write(pergunta[index] + "\n")
+    process.stdout.write( "\n\n" + pergunta[index] + ">")
 }
 
 ask()
 
+const answers = [];
 process.stdin.on("data", data=>{ //o on executa a função data
-    process.stdout.write(data.toString().trim())//o sdn out recebe o data e tira os espaços com o trim
-    process.exit()//termina o processo assim que ele chegar ao fim, evitando loops
+   answers.push(data.toString().trim())//o sdn out recebe o data e tira os espaços com o trim
+    if(answers.length < pergunta.length){
+        ask(answers.length)
+    } else{
+        console.log(answers)
+        process.exit()//termina o processo assim que ele chegar ao fim, evitando loops
+    }
+ 
 })
+
